@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>5. Vue无状态组件 （functional） | H.Z的学习笔记</title>
+    <meta name="description" content="HZ的前端学习笔记，">
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4" name="MTAH5" sid="500699019" cid="500699020"></script>
+  <meta data-n-head="true" data-hid="keywords" name="keywords" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+  <meta data-n-head="true" data-hid="description" name="description" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+    <meta bgImage="http://pic.closeeyes.cn/vue4.jpg">
+    <link rel="preload" href="/assets/css/0.styles.16a3a553.css" as="style"><link rel="preload" href="/assets/js/app.c78b02b4.js" as="script"><link rel="preload" href="/assets/js/2.72b22dfe.js" as="script"><link rel="preload" href="/assets/js/30.40f1dbed.js" as="script"><link rel="preload" href="/assets/js/10.5d4adb2e.js" as="script"><link rel="prefetch" href="/assets/js/11.4ef768d0.js"><link rel="prefetch" href="/assets/js/12.ca276384.js"><link rel="prefetch" href="/assets/js/13.33574ce2.js"><link rel="prefetch" href="/assets/js/14.f8656307.js"><link rel="prefetch" href="/assets/js/15.fe0c999e.js"><link rel="prefetch" href="/assets/js/16.9b1d4ea9.js"><link rel="prefetch" href="/assets/js/17.7a7ef99f.js"><link rel="prefetch" href="/assets/js/18.22f32aae.js"><link rel="prefetch" href="/assets/js/19.b32e4dae.js"><link rel="prefetch" href="/assets/js/20.33b6bdc2.js"><link rel="prefetch" href="/assets/js/21.c43113db.js"><link rel="prefetch" href="/assets/js/22.298d5d5f.js"><link rel="prefetch" href="/assets/js/23.016c3c54.js"><link rel="prefetch" href="/assets/js/24.2d7d1aed.js"><link rel="prefetch" href="/assets/js/25.7be72dee.js"><link rel="prefetch" href="/assets/js/26.9e4abae2.js"><link rel="prefetch" href="/assets/js/27.386a36b5.js"><link rel="prefetch" href="/assets/js/28.dbf4f39a.js"><link rel="prefetch" href="/assets/js/29.2031c54c.js"><link rel="prefetch" href="/assets/js/3.0b664d57.js"><link rel="prefetch" href="/assets/js/31.152fac60.js"><link rel="prefetch" href="/assets/js/32.e22059e3.js"><link rel="prefetch" href="/assets/js/33.0001da11.js"><link rel="prefetch" href="/assets/js/34.8d35058b.js"><link rel="prefetch" href="/assets/js/35.9b3de046.js"><link rel="prefetch" href="/assets/js/36.1d7566d2.js"><link rel="prefetch" href="/assets/js/37.7b3a5b14.js"><link rel="prefetch" href="/assets/js/38.e8c56698.js"><link rel="prefetch" href="/assets/js/39.5c596f42.js"><link rel="prefetch" href="/assets/js/4.8c92dc1f.js"><link rel="prefetch" href="/assets/js/40.b1ab5679.js"><link rel="prefetch" href="/assets/js/41.6202c7a3.js"><link rel="prefetch" href="/assets/js/42.04f6a3f8.js"><link rel="prefetch" href="/assets/js/43.393f7675.js"><link rel="prefetch" href="/assets/js/44.bf712c45.js"><link rel="prefetch" href="/assets/js/45.a70f4bdb.js"><link rel="prefetch" href="/assets/js/46.f9cdb924.js"><link rel="prefetch" href="/assets/js/47.067af22f.js"><link rel="prefetch" href="/assets/js/48.6069c083.js"><link rel="prefetch" href="/assets/js/49.4e6072fb.js"><link rel="prefetch" href="/assets/js/5.0329192f.js"><link rel="prefetch" href="/assets/js/50.a3d5e589.js"><link rel="prefetch" href="/assets/js/51.7575b366.js"><link rel="prefetch" href="/assets/js/6.4d536703.js"><link rel="prefetch" href="/assets/js/7.681f216d.js"><link rel="prefetch" href="/assets/js/8.10815b8c.js"><link rel="prefetch" href="/assets/js/9.3b8a74fe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.16a3a553.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="layout" data-v-7ee5536a><header class="header clearfix" data-v-5b6d54b8 data-v-7ee5536a><div class="content-logo" data-v-5b6d54b8><div class="title" data-v-5b6d54b8>H.Z的学习笔记</div></div> <div class="nav-wrapper" data-v-5b6d54b8><nav class="navs" data-v-5b6d54b8></nav></div></header> <div class="search-box" style="margin:20px 0;" data-v-4b9f78e4 data-v-7ee5536a><input aria-label="Search" autocomplete="off" spellcheck="false" placeholder="请输入搜索关键词~" value="" data-v-4b9f78e4> <!----></div> <main data-v-7ee5536a><div class="page" data-v-4378bf22 data-v-7ee5536a><h2 style="border-bottom: none; margin-bottom: 0;display:flex;" data-v-4378bf22><p style="padding: 0; margin:0; flex:4" data-v-4378bf22>5. Vue无状态组件 （functional）</p> <div style="flex:1;" data-v-4378bf22><ul data-v-4378bf22><li class="tag" style="background:;color:#fff;" data-v-4378bf22><i style="border-right-color:;" data-v-4378bf22></i> <span data-v-4378bf22>Vue</span></li></ul></div></h2> <div class="content__default" data-v-4378bf22><h2 id="functional"><a href="#functional" aria-hidden="true" class="header-anchor">#</a> functional</h2> <p>::: tip functional
+使组件无状态 (没有 data ) 和无实例 (没有 this 上下文)。他们用一个简单的 render 函数返回虚拟节点使他们更容易渲染。提升性能。<br> <a href="https://github.com/hz199/__myLearnNotes/blob/master/demo/vue/vue.functional.html" target="_blank" rel="noopener noreferrer">完整代码<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+:::</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>app<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>comp</span> <span class="token attr-name">:arr</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>arr<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>comp</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span><span class="token string">'comp'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    functional<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token function">render</span> <span class="token punctuation">(</span><span class="token parameter">h<span class="token punctuation">,</span> context</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">/*
+        props：提供所有 prop 的对象
+        children: VNode 子节点的数组
+        slots: 一个函数，返回了包含所有插槽的对象
+        scopedSlots: (2.6.0+) 一个暴露传入的作用域插槽的对象。也以函数形式暴露普通插槽。
+        data：传递给组件的整个数据对象，作为 createElement 的第二个参数传入组件
+        parent：对父组件的引用
+        listeners: (2.3.0+) 一个包含了所有父组件为当前组件注册的事件监听器的对象。这是 data.on 的一个别名。
+        injections: (2.3.0+) 如果使用了 inject 选项，则该对象包含了应当被注入的属性。
+        */</span>
+      <span class="token keyword">const</span> propsArr <span class="token operator">=</span> context<span class="token punctuation">.</span>props<span class="token punctuation">.</span>arr <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+      <span class="token comment">// render li 标签</span>
+      <span class="token keyword">const</span> renderLi <span class="token operator">=</span> propsArr<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">item</span> <span class="token operator">=&gt;</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'li'</span><span class="token punctuation">,</span> item<span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token keyword">return</span> <span class="token function">h</span><span class="token punctuation">(</span><span class="token string">'ul'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+        <span class="token operator">...</span>renderLi
+      <span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+  <span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+    <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><ul><li>如果是在<code>单文件组件</code>,就是使用构建工具的情况下只需要 template 标签添加 <code>functional</code> 属性即可</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name">functional</span><span class="token punctuation">&gt;</span></span>
+  ....
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div> <div class="gitalk-container"><div id="gitalk-container"></div></div></div></div></main> <footer class="footer" data-v-46dae662 data-v-7ee5536a>
+  
+  <div style="margin-top:10px;" data-v-46dae662><a target="_block" href="http://www.beian.miit.gov.cn/" class="footer-a" data-v-46dae662>浙ICP备18051710号</a></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c78b02b4.js" defer></script><script src="/assets/js/2.72b22dfe.js" defer></script><script src="/assets/js/30.40f1dbed.js" defer></script><script src="/assets/js/10.5d4adb2e.js" defer></script>
+  </body>
+</html>

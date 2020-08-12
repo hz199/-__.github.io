@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>不规则的底部导航 | H.Z的学习笔记</title>
+    <meta name="description" content="HZ的前端学习笔记，">
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4" name="MTAH5" sid="500699019" cid="500699020"></script>
+  <meta data-n-head="true" data-hid="keywords" name="keywords" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+  <meta data-n-head="true" data-hid="description" name="description" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+    <meta bgImage="http://pic.closeeyes.cn/fengjing3.jpg">
+    <link rel="preload" href="/assets/css/0.styles.16a3a553.css" as="style"><link rel="preload" href="/assets/js/app.c78b02b4.js" as="script"><link rel="preload" href="/assets/js/2.72b22dfe.js" as="script"><link rel="preload" href="/assets/js/7.681f216d.js" as="script"><link rel="preload" href="/assets/js/10.5d4adb2e.js" as="script"><link rel="prefetch" href="/assets/js/11.4ef768d0.js"><link rel="prefetch" href="/assets/js/12.ca276384.js"><link rel="prefetch" href="/assets/js/13.33574ce2.js"><link rel="prefetch" href="/assets/js/14.f8656307.js"><link rel="prefetch" href="/assets/js/15.fe0c999e.js"><link rel="prefetch" href="/assets/js/16.9b1d4ea9.js"><link rel="prefetch" href="/assets/js/17.7a7ef99f.js"><link rel="prefetch" href="/assets/js/18.22f32aae.js"><link rel="prefetch" href="/assets/js/19.b32e4dae.js"><link rel="prefetch" href="/assets/js/20.33b6bdc2.js"><link rel="prefetch" href="/assets/js/21.c43113db.js"><link rel="prefetch" href="/assets/js/22.298d5d5f.js"><link rel="prefetch" href="/assets/js/23.016c3c54.js"><link rel="prefetch" href="/assets/js/24.2d7d1aed.js"><link rel="prefetch" href="/assets/js/25.7be72dee.js"><link rel="prefetch" href="/assets/js/26.9e4abae2.js"><link rel="prefetch" href="/assets/js/27.386a36b5.js"><link rel="prefetch" href="/assets/js/28.dbf4f39a.js"><link rel="prefetch" href="/assets/js/29.2031c54c.js"><link rel="prefetch" href="/assets/js/3.0b664d57.js"><link rel="prefetch" href="/assets/js/30.40f1dbed.js"><link rel="prefetch" href="/assets/js/31.152fac60.js"><link rel="prefetch" href="/assets/js/32.e22059e3.js"><link rel="prefetch" href="/assets/js/33.0001da11.js"><link rel="prefetch" href="/assets/js/34.8d35058b.js"><link rel="prefetch" href="/assets/js/35.9b3de046.js"><link rel="prefetch" href="/assets/js/36.1d7566d2.js"><link rel="prefetch" href="/assets/js/37.7b3a5b14.js"><link rel="prefetch" href="/assets/js/38.e8c56698.js"><link rel="prefetch" href="/assets/js/39.5c596f42.js"><link rel="prefetch" href="/assets/js/4.8c92dc1f.js"><link rel="prefetch" href="/assets/js/40.b1ab5679.js"><link rel="prefetch" href="/assets/js/41.6202c7a3.js"><link rel="prefetch" href="/assets/js/42.04f6a3f8.js"><link rel="prefetch" href="/assets/js/43.393f7675.js"><link rel="prefetch" href="/assets/js/44.bf712c45.js"><link rel="prefetch" href="/assets/js/45.a70f4bdb.js"><link rel="prefetch" href="/assets/js/46.f9cdb924.js"><link rel="prefetch" href="/assets/js/47.067af22f.js"><link rel="prefetch" href="/assets/js/48.6069c083.js"><link rel="prefetch" href="/assets/js/49.4e6072fb.js"><link rel="prefetch" href="/assets/js/5.0329192f.js"><link rel="prefetch" href="/assets/js/50.a3d5e589.js"><link rel="prefetch" href="/assets/js/51.7575b366.js"><link rel="prefetch" href="/assets/js/6.4d536703.js"><link rel="prefetch" href="/assets/js/8.10815b8c.js"><link rel="prefetch" href="/assets/js/9.3b8a74fe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.16a3a553.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="layout" data-v-7ee5536a><header class="header clearfix" data-v-5b6d54b8 data-v-7ee5536a><div class="content-logo" data-v-5b6d54b8><div class="title" data-v-5b6d54b8>H.Z的学习笔记</div></div> <div class="nav-wrapper" data-v-5b6d54b8><nav class="navs" data-v-5b6d54b8></nav></div></header> <div class="search-box" style="margin:20px 0;" data-v-4b9f78e4 data-v-7ee5536a><input aria-label="Search" autocomplete="off" spellcheck="false" placeholder="请输入搜索关键词~" value="" data-v-4b9f78e4> <!----></div> <main data-v-7ee5536a><div class="page" data-v-4378bf22 data-v-7ee5536a><h2 style="border-bottom: none; margin-bottom: 0;display:flex;" data-v-4378bf22><p style="padding: 0; margin:0; flex:4" data-v-4378bf22>不规则的底部导航</p> <div style="flex:1;" data-v-4378bf22><ul data-v-4378bf22><li class="tag" style="background:;color:#fff;" data-v-4378bf22><i style="border-right-color:;" data-v-4378bf22></i> <span data-v-4378bf22>flutter</span></li></ul></div></h2> <div class="content__default" data-v-4378bf22><p><img src="/assets/img/01.2d0a68b9.jpeg" alt="image"></p> <div class="language-dart extra-class"><pre class="language-dart"><code>
+<span class="token keyword">import</span> <span class="token string">'package:flutter/material.dart'</span><span class="token punctuation">;</span>
+
+<span class="token comment">/*
+ * 不规则的bottomBar demo
+ */</span>
+<span class="token keyword">class</span> <span class="token class-name">IrregularityBottomNavBar</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  <span class="token function">IrregularityBottomNavBar</span><span class="token punctuation">(</span><span class="token punctuation">{</span>Key key<span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword">super</span><span class="token punctuation">(</span>key<span class="token punctuation">:</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  _IrregularityBottomNavBar <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_IrregularityBottomNavBar</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_IrregularityBottomNavBar</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>IrregularityBottomNavBar<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  List<span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span> _testPage <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token function">TestPage</span><span class="token punctuation">(</span><span class="token string">'测试首页'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token function">TestPage</span><span class="token punctuation">(</span><span class="token string">'测试购物车'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+  int _index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Scaffold</span><span class="token punctuation">(</span>
+      <span class="token comment">// appBar: AppBar(</span>
+      <span class="token comment">//   title: Text('不规则的bottomBar'),</span>
+      <span class="token comment">// ),</span>
+      body<span class="token punctuation">:</span> _testPage<span class="token punctuation">[</span>_index<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      floatingActionButton<span class="token punctuation">:</span> <span class="token function">FloatingActionButton</span><span class="token punctuation">(</span>
+        onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+          Navigator<span class="token punctuation">.</span><span class="token function">of</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">MaterialPageRoute</span><span class="token punctuation">(</span>
+            builder<span class="token punctuation">:</span> <span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">return</span> <span class="token function">TestPage</span><span class="token punctuation">(</span><span class="token string">'FloatingActionButton 路由页面'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        child<span class="token punctuation">:</span> <span class="token function">Icon</span><span class="token punctuation">(</span>Icons<span class="token punctuation">.</span>add<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        tooltip<span class="token punctuation">:</span> <span class="token string">'按钮'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      floatingActionButtonLocation<span class="token punctuation">:</span> FloatingActionButtonLocation<span class="token punctuation">.</span>centerDocked<span class="token punctuation">,</span>
+      bottomNavigationBar<span class="token punctuation">:</span> <span class="token function">BottomAppBar</span><span class="token punctuation">(</span>
+        color<span class="token punctuation">:</span> Colors<span class="token punctuation">.</span>yellow<span class="token punctuation">,</span>
+        shape<span class="token punctuation">:</span> <span class="token function">CircularNotchedRectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 原形缺口</span>
+        child<span class="token punctuation">:</span> <span class="token function">Row</span><span class="token punctuation">(</span>
+          mainAxisSize<span class="token punctuation">:</span> MainAxisSize<span class="token punctuation">.</span>max<span class="token punctuation">,</span>
+          mainAxisAlignment<span class="token punctuation">:</span> MainAxisAlignment<span class="token punctuation">.</span>spaceAround<span class="token punctuation">,</span>
+          children<span class="token punctuation">:</span> <span class="token operator">&lt;</span>Widget<span class="token operator">&gt;</span><span class="token punctuation">[</span>
+            <span class="token function">IconButton</span><span class="token punctuation">(</span>
+              icon<span class="token punctuation">:</span> <span class="token function">Icon</span><span class="token punctuation">(</span>Icons<span class="token punctuation">.</span>home<span class="token punctuation">)</span><span class="token punctuation">,</span>
+              color<span class="token punctuation">:</span> Colors<span class="token punctuation">.</span>white<span class="token punctuation">,</span>
+              onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  _index <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token function">IconButton</span><span class="token punctuation">(</span>
+              icon<span class="token punctuation">:</span> <span class="token function">Icon</span><span class="token punctuation">(</span>Icons<span class="token punctuation">.</span>shopping_cart<span class="token punctuation">)</span><span class="token punctuation">,</span>
+              color<span class="token punctuation">:</span> Colors<span class="token punctuation">.</span>white<span class="token punctuation">,</span>
+              onPressed<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  _index <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token punctuation">)</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 测试页面</span>
+<span class="token keyword">class</span> <span class="token class-name">TestPage</span> <span class="token keyword">extends</span> <span class="token class-name">StatefulWidget</span> <span class="token punctuation">{</span>
+  String _Title<span class="token punctuation">;</span>
+  <span class="token function">TestPage</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>_Title<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  _TestPageState <span class="token function">createState</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token function">_TestPageState</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">_TestPageState</span> <span class="token keyword">extends</span> <span class="token class-name">State</span><span class="token operator">&lt;</span>TestPage<span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+  <span class="token metadata symbol">@override</span>
+  Widget <span class="token function">build</span><span class="token punctuation">(</span>BuildContext context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">Scaffold</span><span class="token punctuation">(</span>
+      appBar<span class="token punctuation">:</span> <span class="token function">AppBar</span><span class="token punctuation">(</span>
+        title<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span>widget<span class="token punctuation">.</span>_Title<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+      body<span class="token punctuation">:</span> <span class="token function">Center</span><span class="token punctuation">(</span>
+       child<span class="token punctuation">:</span> <span class="token function">Text</span><span class="token punctuation">(</span>widget<span class="token punctuation">.</span>_Title<span class="token punctuation">)</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div> <div class="gitalk-container"><div id="gitalk-container"></div></div></div></div></main> <footer class="footer" data-v-46dae662 data-v-7ee5536a>
+  
+  <div style="margin-top:10px;" data-v-46dae662><a target="_block" href="http://www.beian.miit.gov.cn/" class="footer-a" data-v-46dae662>浙ICP备18051710号</a></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c78b02b4.js" defer></script><script src="/assets/js/2.72b22dfe.js" defer></script><script src="/assets/js/7.681f216d.js" defer></script><script src="/assets/js/10.5d4adb2e.js" defer></script>
+  </body>
+</html>

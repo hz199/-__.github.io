@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1. Dart 数据类型 | H.Z的学习笔记</title>
+    <meta name="description" content="HZ的前端学习笔记，">
+    <script src="//pingjs.qq.com/h5/stats.js?v2.0.4" name="MTAH5" sid="500699019" cid="500699020"></script>
+  <meta data-n-head="true" data-hid="keywords" name="keywords" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+  <meta data-n-head="true" data-hid="description" name="description" content="HZ的前端学习笔记，其中包含HTML, JavaScript, css, Vue, React Nodejs, flutter等">
+    <meta bgImage="http://pic.closeeyes.cn/fengjing3.jpg">
+    <link rel="preload" href="/assets/css/0.styles.16a3a553.css" as="style"><link rel="preload" href="/assets/js/app.c78b02b4.js" as="script"><link rel="preload" href="/assets/js/2.72b22dfe.js" as="script"><link rel="preload" href="/assets/js/33.0001da11.js" as="script"><link rel="preload" href="/assets/js/10.5d4adb2e.js" as="script"><link rel="prefetch" href="/assets/js/11.4ef768d0.js"><link rel="prefetch" href="/assets/js/12.ca276384.js"><link rel="prefetch" href="/assets/js/13.33574ce2.js"><link rel="prefetch" href="/assets/js/14.f8656307.js"><link rel="prefetch" href="/assets/js/15.fe0c999e.js"><link rel="prefetch" href="/assets/js/16.9b1d4ea9.js"><link rel="prefetch" href="/assets/js/17.7a7ef99f.js"><link rel="prefetch" href="/assets/js/18.22f32aae.js"><link rel="prefetch" href="/assets/js/19.b32e4dae.js"><link rel="prefetch" href="/assets/js/20.33b6bdc2.js"><link rel="prefetch" href="/assets/js/21.c43113db.js"><link rel="prefetch" href="/assets/js/22.298d5d5f.js"><link rel="prefetch" href="/assets/js/23.016c3c54.js"><link rel="prefetch" href="/assets/js/24.2d7d1aed.js"><link rel="prefetch" href="/assets/js/25.7be72dee.js"><link rel="prefetch" href="/assets/js/26.9e4abae2.js"><link rel="prefetch" href="/assets/js/27.386a36b5.js"><link rel="prefetch" href="/assets/js/28.dbf4f39a.js"><link rel="prefetch" href="/assets/js/29.2031c54c.js"><link rel="prefetch" href="/assets/js/3.0b664d57.js"><link rel="prefetch" href="/assets/js/30.40f1dbed.js"><link rel="prefetch" href="/assets/js/31.152fac60.js"><link rel="prefetch" href="/assets/js/32.e22059e3.js"><link rel="prefetch" href="/assets/js/34.8d35058b.js"><link rel="prefetch" href="/assets/js/35.9b3de046.js"><link rel="prefetch" href="/assets/js/36.1d7566d2.js"><link rel="prefetch" href="/assets/js/37.7b3a5b14.js"><link rel="prefetch" href="/assets/js/38.e8c56698.js"><link rel="prefetch" href="/assets/js/39.5c596f42.js"><link rel="prefetch" href="/assets/js/4.8c92dc1f.js"><link rel="prefetch" href="/assets/js/40.b1ab5679.js"><link rel="prefetch" href="/assets/js/41.6202c7a3.js"><link rel="prefetch" href="/assets/js/42.04f6a3f8.js"><link rel="prefetch" href="/assets/js/43.393f7675.js"><link rel="prefetch" href="/assets/js/44.bf712c45.js"><link rel="prefetch" href="/assets/js/45.a70f4bdb.js"><link rel="prefetch" href="/assets/js/46.f9cdb924.js"><link rel="prefetch" href="/assets/js/47.067af22f.js"><link rel="prefetch" href="/assets/js/48.6069c083.js"><link rel="prefetch" href="/assets/js/49.4e6072fb.js"><link rel="prefetch" href="/assets/js/5.0329192f.js"><link rel="prefetch" href="/assets/js/50.a3d5e589.js"><link rel="prefetch" href="/assets/js/51.7575b366.js"><link rel="prefetch" href="/assets/js/6.4d536703.js"><link rel="prefetch" href="/assets/js/7.681f216d.js"><link rel="prefetch" href="/assets/js/8.10815b8c.js"><link rel="prefetch" href="/assets/js/9.3b8a74fe.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.16a3a553.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="layout" data-v-7ee5536a><header class="header clearfix" data-v-5b6d54b8 data-v-7ee5536a><div class="content-logo" data-v-5b6d54b8><div class="title" data-v-5b6d54b8>H.Z的学习笔记</div></div> <div class="nav-wrapper" data-v-5b6d54b8><nav class="navs" data-v-5b6d54b8></nav></div></header> <div class="search-box" style="margin:20px 0;" data-v-4b9f78e4 data-v-7ee5536a><input aria-label="Search" autocomplete="off" spellcheck="false" placeholder="请输入搜索关键词~" value="" data-v-4b9f78e4> <!----></div> <main data-v-7ee5536a><div class="page" data-v-4378bf22 data-v-7ee5536a><h2 style="border-bottom: none; margin-bottom: 0;display:flex;" data-v-4378bf22><p style="padding: 0; margin:0; flex:4" data-v-4378bf22>1. Dart 数据类型</p> <div style="flex:1;" data-v-4378bf22><ul data-v-4378bf22><li class="tag" style="background:;color:#fff;" data-v-4378bf22><i style="border-right-color:;" data-v-4378bf22></i> <span data-v-4378bf22>Dart</span></li></ul></div></h2> <div class="content__default" data-v-4378bf22><p>::: tip
+<a href="http://dart.goodev.org/guides/language/language-tour" target="_blank" rel="noopener noreferrer">Dart中文网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+:::</p> <h3 id="_1-内置的类型"><a href="#_1-内置的类型" aria-hidden="true" class="header-anchor">#</a> 1. 内置的类型</h3> <blockquote><ul><li>numbers  int（整数） double（浮点数） 其中这两个都是 num 的子类。</li> <li>strings 字符串</li> <li>booleans 布尔值</li> <li>lists (也被称之为 arrays)</li> <li>maps</li> <li>runes (用于在字符串中表示 Unicode 字符)</li> <li>symbols</li></ul></blockquote> <ul><li>对象的声明方式</li></ul> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token comment">// var 声名变量 可以类型推倒</span>
+<span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+<span class="token comment">// final and const 是常量的声名方式</span>
+
+<span class="token comment">// final 的变量可以赋值一次</span>
+<span class="token comment">// const 是编译时的常量</span>
+
+<span class="token keyword">final</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DateTime<span class="token punctuation">.</span>now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token function">print</span><span class="token punctuation">(</span>date<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 2019-05-31 15:17:11.066124 ~~~~~ 这样写是可以的</span>
+
+<span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">DateTime<span class="token punctuation">.</span>now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// X 错误写法 直接报错</span>
+
+
+</code></pre></div><div class="language-dart extra-class"><pre class="language-dart"><code>
+  <span class="token comment">/* 字符串 */</span>
+  <span class="token comment">//  r 前缀可以创建一个 “原始 raw” 字符串 \n 会被直接输出</span>
+  String a <span class="token operator">=</span> <span class="token string">r&quot;In a raw string, even \n isn't special.&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 字符串拼接</span>
+  String b <span class="token operator">=</span> <span class="token string">'字符串B'</span><span class="token punctuation">;</span>
+  String c <span class="token operator">=</span> <span class="token string">'字符串C'</span><span class="token punctuation">;</span>
+  String d <span class="token operator">=</span> <span class="token string">&quot;合并后的$b和$c&quot;</span><span class="token punctuation">;</span>  <span class="token comment">// ${}， {} 可以省略。 JS中的 `${}` 用法类式  </span>
+
+  <span class="token comment">// '''   ''' 使用  使用三个单引号或者双引号也可以 创建多行字符串对象  js `` 同样用法</span>
+  String e <span class="token operator">=</span> <span class="token string">'''
+    第一行
+    第二行
+    '''</span><span class="token punctuation">;</span>
+
+  <span class="token comment">/* 数字类型 */</span>
+  int f <span class="token operator">=</span> <span class="token number">11</span><span class="token punctuation">;</span>
+  double g <span class="token operator">=</span> <span class="token number">555</span><span class="token punctuation">;</span> <span class="token comment">// 555.0 声明 double 类型使用时 整数转成浮点数</span>
+  num h <span class="token operator">=</span> <span class="token number">555</span>
+
+  <span class="token comment">/* booleans */</span>
+
+  <span class="token comment">// 条件语句中 if () {} 判断条件必须的布尔值 。</span>
+  <span class="token comment">// 下面的例子是错误的</span>
+  num a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token function">print</span><span class="token punctuation">(</span><span class="token string">'JS prints this line.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="list-也就是js-中的array-但是其中的一些方法有所改变"><a href="#list-也就是js-中的array-但是其中的一些方法有所改变" aria-hidden="true" class="header-anchor">#</a> <code>list</code> 也就是JS 中的<code>array</code>,但是其中的一些方法有所改变</h3> <div class="language-dart extra-class"><pre class="language-dart"><code><span class="token comment">// 字面量声明一个不可修改的List时</span>
+List constList <span class="token operator">=</span> <span class="token keyword">const</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span>
+
+<span class="token comment">// list 是否为空</span>
+constList<span class="token punctuation">.</span>isEmpty
+<span class="token comment">// keys</span>
+constList<span class="token punctuation">.</span>keys
+<span class="token comment">// values</span>
+constList<span class="token punctuation">.</span>values
+<span class="token comment">// list 是否不为空</span>
+constList<span class="token punctuation">.</span>isNotEmpty
+
+<span class="token keyword">var</span> person <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'小1'</span><span class="token punctuation">,</span> <span class="token string">'小2'</span><span class="token punctuation">,</span> <span class="token string">'小3'</span><span class="token punctuation">]</span>
+<span class="token comment">// 向list 添加元素</span>
+person<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'小4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 向list 添加多个元素</span>
+person<span class="token punctuation">.</span><span class="token function">addAll</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'小5'</span><span class="token punctuation">,</span> <span class="token string">'小6'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 查找元素的索引 indexOf</span>
+person<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'小4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 3</span>
+
+<span class="token comment">// 删除某个元素</span>
+person<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">'小4'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 根据索引删除</span>
+person<span class="token punctuation">.</span><span class="token function">removeAt</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// fillRange 修改 list 中的元素 接收三个参数 开始索引，结束索引，修改之后的值</span>
+person<span class="token punctuation">.</span><span class="token function">fillRange</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token string">'aaaa'</span><span class="token punctuation">)</span>
+<span class="token comment">// insert 在某个位置 插入元素</span>
+person<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'😄'</span><span class="token punctuation">)</span>
+<span class="token comment">// insertAll 插入多个元素</span>
+person<span class="token punctuation">.</span><span class="token function">insertAll</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'😄'</span><span class="token punctuation">,</span> 🐛<span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 字符串 与 list 互转</span>
+<span class="token comment">// 这两个元素与js用法一样</span>
+<span class="token comment">// 数组转字符串 join()</span>
+<span class="token comment">// 字符串转数组 split()</span>
+
+</code></pre></div><ul><li>dart 中同样存在 Set 类型的的数据，（不重复）</li></ul> <h3 id="map-类试-js-的对象"><a href="#map-类试-js-的对象" aria-hidden="true" class="header-anchor">#</a> Map 类试 js 的对象 {}</h3> <div class="gitalk-container"><div id="gitalk-container"></div></div></div></div></main> <footer class="footer" data-v-46dae662 data-v-7ee5536a>
+  
+  <div style="margin-top:10px;" data-v-46dae662><a target="_block" href="http://www.beian.miit.gov.cn/" class="footer-a" data-v-46dae662>浙ICP备18051710号</a></div></footer></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c78b02b4.js" defer></script><script src="/assets/js/2.72b22dfe.js" defer></script><script src="/assets/js/33.0001da11.js" defer></script><script src="/assets/js/10.5d4adb2e.js" defer></script>
+  </body>
+</html>
